@@ -16,7 +16,7 @@ class Client:
             'content-type': '',
             'user-agent' : 'AppwritePythonSDK/7.0.1 (${os.uname().sysname}; ${os.uname().version}; ${os.uname().machine})',
             'x-sdk-name': 'Python',
-            'x-sdk-platform': 'server',
+            # 'x-sdk-platform': 'server',
             'x-sdk-language': 'python',
             'x-sdk-version': '7.0.1',
             'X-Appwrite-Response-Format' : '1.6.0',
@@ -37,29 +37,29 @@ class Client:
     def set_project(self, value):
         """Your project ID"""
 
-        self._global_headers['x-PyAppWrite-project'] = value
+        self._global_headers['x-Appwrite-project'] = value
         return self
 
     def set_key(self, value):
         """Your secret API key"""
 
-        self._global_headers['x-PyAppWrite-key'] = value
+        self._global_headers['x-Appwrite-key'] = value
         return self
 
     def set_jwt(self, value):
         """Your secret JSON Web Token"""
 
-        self._global_headers['x-PyAppWrite-jwt'] = value
+        self._global_headers['x-Appwrite-jwt'] = value
         return self
 
     def set_locale(self, value):
-        self._global_headers['x-PyAppWrite-locale'] = value
+        self._global_headers['x-Appwrite-locale'] = value
         return self
 
     def set_session(self, value):
         """The user session to authenticate with"""
 
-        self._global_headers['x-PyAppWrite-session'] = value
+        self._global_headers['x-Appwrite-session'] = value
         return self
 
     def get_session(self):
@@ -121,7 +121,7 @@ class Client:
 
             response.raise_for_status()
 
-            warnings = response.headers.get('x-PyAppWrite-warning')
+            warnings = response.headers.get('x-Appwrite-warning')
             if warnings:
                 for warning in warnings.split(';'):
                     print(f'Warning: {warning}')
@@ -212,7 +212,7 @@ class Client:
             offset = offset + self._chunk_size
 
             if "$id" in result:
-                headers["x-PyAppWrite-id"] = result["$id"]
+                headers["x-Appwrite-id"] = result["$id"]
 
             if on_progress is not None:
                 end = min((((counter * self._chunk_size) + self._chunk_size) - 1), size - 1)

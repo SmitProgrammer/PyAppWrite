@@ -2,21 +2,21 @@ import setuptools
 
 long_description: str
 
-with open("README.md", "r", encoding="utf-8") as readme_file_desc:
-    long_description = readme_file_desc.read()
+# with open("README.md", "r", encoding="utf-8") as readme_file_desc:
+    # long_description = readme_file_desc.read()
 
 setuptools.setup(
-  name = 'PyAppWrite',
+  name = 'PyAppwrite',
   packages = [
-    'PyAppWrite',
-    'PyAppWrite/services',
-    'PyAppWrite/encoders',
-    'PyAppWrite/enums',
+    'PyAppwrite',
+    'PyAppwrite/services',
+    'PyAppwrite/encoders',
+    'PyAppwrite/enums',
   ],
-  version = '7.0.1',
+  version = '1.0.1',
   license='BSD-3-Clause',
   description = "Third Party Module with Persistent Session",
-  long_description = long_description,
+  long_description = "Third Party Module with Persistent Session\nFor more information, please refer to the official [Appwrite Documentation](https://appwrite.io/docs)",
   long_description_content_type = 'text/markdown',
   author = 'Smit Talsaniya',
   author_email = 'techsmitdevloper@gmail.com',

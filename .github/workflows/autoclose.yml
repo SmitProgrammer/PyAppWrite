@@ -6,6 +6,6 @@ on:
 
 jobs:
   auto_close:
-    uses: PyAppWrite/.github/.github/workflows/autoclose.yml@main
+    uses: PyAppwrite/.github/.github/workflows/autoclose.yml@main
     secrets:
       GH_AUTO_CLOSE_PR_TOKEN: ${{ secrets.GH_AUTO_CLOSE_PR_TOKEN }}

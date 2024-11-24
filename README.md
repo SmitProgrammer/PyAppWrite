@@ -1,10 +1,5 @@
-# Appwrite Python SDK
+# Third Party Appwrite Python SDK
 
-![License](https://img.shields.io/github/license/appwrite/sdk-for-python.svg?style=flat-square)
-![Version](https://img.shields.io/badge/api%20version-1.6.0-blue.svg?style=flat-square)
-[![Build Status](https://img.shields.io/travis/com/appwrite/sdk-generator?style=flat-square)](https://travis-ci.com/appwrite/sdk-generator)
-[![Twitter Account](https://img.shields.io/twitter/follow/appwrite?color=00acee&label=twitter&style=flat-square)](https://twitter.com/appwrite)
-[![Discord](https://img.shields.io/discord/564160730845151244?label=discord&style=flat-square)](https://appwrite.io/discord)
 
 **This SDK is compatible with Appwrite server version 1.6.x. For older versions, please check [previous releases](https://github.com/appwrite/sdk-for-python/releases).**
 
@@ -17,7 +12,7 @@ Appwrite is an open-source backend as a service server that abstract and simplif
 To install via [PyPI](https://pypi.org/):
 
 ```bash
-pip install PyAppWrite
+pip install PyAppwrite
 ```
 
 
